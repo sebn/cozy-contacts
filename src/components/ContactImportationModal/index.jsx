@@ -48,6 +48,8 @@ class ContactImportationModal extends React.Component {
     this.updateImportation(runningImportation);
 
     const finishedImportation = await finishedImportationPromise;
+    // eslint-disable-next-line
+    console.log(finishedImportation); // FIXME: revert commit
 
     if (finishedImportation.status === Status.COMPLETE_SUCCESS) {
       Alerter.success("importation.complete_success", {
