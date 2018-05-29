@@ -62,6 +62,8 @@ async function importData(data, options) {
 
     // 2.b. Save
     try {
+      if (transformedContact.fullname === "Unsaved")
+        throw new Error("Save error"); // FIXME: revert commit
       await save(transformedContact);
     } catch (saveError) {
       unsaved++;

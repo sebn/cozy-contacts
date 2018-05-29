@@ -26,6 +26,7 @@ export default {
 };
 
 function contact(v2) {
+  if (v2.fn === "Broken") throw new Error("Transform error"); // FIXME: revert commit
   return trimObject({
     fullname: v2.fn,
     name: name(v2),

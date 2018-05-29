@@ -1,0 +1,3 @@
+VERSION:3.0
+FN:Missing BEGIN:VCARD should get parseError
+END:VCARD
