@@ -57,17 +57,15 @@ export default class ContactsEmptyList extends React.Component {
                 />
               </IntentOpener>
             </span>
-            {false && (
-              <span className="contacts-empty-action">
-                <Button
-                  className="contacts-empty-button"
-                  icon={<Icon icon={IconTeam} color={palette.coolGrey} />}
-                  label={t("empty.importation")}
-                  theme="secondary"
-                  onClick={this.props.displayImportation}
-                />
-              </span>
-            )}
+            <span className="contacts-empty-action">
+              <Button
+                className="contacts-empty-button"
+                icon={<Icon icon={IconTeam} color={palette.coolGrey} />}
+                label={t("empty.importation")}
+                theme="secondary"
+                onClick={this.props.displayImportation}
+              />
+            </span>
           </div>
         )}
       </Empty>
